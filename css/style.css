@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --color-blue: #00cccc;
+    --color-blue-hover: #99cccc;
+    --color-grey: #cccc;
+    --color-dark-grey: #333;
+    --color-grey-footer: #666;
+    --color-grey-text: #999;
+    --color-white: #fff;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+.header-high{
+    height: 60px;
+    background: var(--color-dark-grey);
+}
+
+.container{
+    display: flex;
+    max-width: 980px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.header-high img{    
+    margin: auto 12px;
+    width: 113px;
+    height: 23px;   
+}    
+
+.media{
+    display: flex;
+    margin: auto 12px;
+}
+
+.media i{
+    font-size: 2rem;
+}
+
+.media a{
+    color: var(--color-grey-text);
+    font-size: 1.4rem;
+    padding: 12px;
+    transition: .2s;
+}
+
+.media a:hover{
+    color: var(--color-blue);
+}
+
+.header-menu ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px 15px;
+}
+
+.header-menu a{
+    color: var(--color-grey-text);
+    font-weight: 600;
+    font-size: 1.4rem;
+    transition: .5s;
+}
+
+.header-menu a:hover{
+    color: var(--color-blue);
+    border-bottom: 2px solid var(--color-blue);
+    padding-bottom: 15px;
+}
+
+.search-form{
+    position: relative;
+    padding-right: 20px;
+}
+
+.search-form .fa{    
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    color: var(--color-grey);
+    font-size: 1.4rem;
+}
+
+.search-form input{
+    height: 30px;
+    width: 190px;
+    border: 1px solid var(--color-grey);
+}
+
+.search-form input::placeholder{
+    padding-left: 10px;
+    color: var(--color-grey);
+}
+
+.slide{
+    position: relative;
+}
+
+#slideshow{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.section-1{
+    max-width: 980px;
+    text-align: center;
+    margin: auto;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: normal;
+    color: var(--color-grey-footer);
+    margin: 50px 0 30px 0;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.5rem;
+    color: var(--color-grey-footer);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.categories{
+    display: flex;
+}
+
+.col-1{
+    flex-basis: 30%;
+    margin: 50px auto;
+    min-width: 300px;
+}
+
+.col-1.middle{
+    margin-top: 80px;
+}
+
+.categories h2{
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 20px;
+    color: var(--color-grey-footer);
+}
+
+.categories p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: 15px;
+    color: var(--color-grey-footer);
+}
+
+.background{
+    background: #eee;
+    position: relative;
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #eee;
+    z-index: 100;
+    top: -50px;
+    left: 47%;
+    z-index: -1;
+}
+
+.section-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 980px;
+    margin: auto;
+}
+
+.col-2{
+    max-width: 310px;
+    border: 1px solid var(--color-grey-text);
+    margin: 40px 0;
+}
+
+.col-2 img{
+    opacity: .8;
+    width: 308px;
+}
+
+.col-2 p{
+    font-size: 1.4rem;
+    color: var(--color-grey-footer);
+    margin: 20px;
+    line-height: 1.2;
+}
+
+.patrocinadores{
+    height: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 980px;
+    margin: auto;
+}
+
+footer{
+    background: #4e4e4e;
+    color: var(--color-white);
+    padding: 40px;
+}
+
+.footer-container{    
+    display: flex;
+    max-width: 980px;
+    margin: auto;
+}
+
+.col-3{
+    flex-basis: 25%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.col-3 h3{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.col-3 p{
+    font-size: 1.4rem;
+    color: var(--color-grey-text);
+    line-height: 1.5;
+}
+
+.icon-container p{    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container .fa{
+    font-size: 1.8rem;
+    color: var(--color-blue);
+    float: left;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.icon-container hr{
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.footer-low{
+    background: var(--color-dark-grey);
+    color: var(--color-grey-text);
+    padding: 15px;
+    padding-bottom: 30px;
+}
